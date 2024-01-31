@@ -1,0 +1,35 @@
+#calculator {
+  width: 400px;
+}
+
+#display {
+  background-color: black;
+  padding: 10px;
+  text-align: right;
+  color: white;
+}
+
+.buttons .row {
+  display: flex;
+}
+
+.buttons .btn {
+  flex: 1;
+  padding: 10px;
+  margin: 2px;
+  background-color: lightgray;
+  border: solid black;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: larger;
+}
+
+
+.buttons .btn:active {
+  background-color: #c0c0c0;}
+
+
+.equals {
+  background-color: #7f7;
+}

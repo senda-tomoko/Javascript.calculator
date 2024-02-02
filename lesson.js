@@ -5,13 +5,23 @@ $(document).ready(function() {
     $('.number, .decimal').click(function() {
         let currentDisplay = display.text();
         let newValue = $(this).text();
-
-        if (currentDisplay === '0' && newValue !== '.') {
-            display.text(newValue);
+    
+        if (newValue === '.') {
+            
+            if (!currentDisplay.includes('.')) {
+                
+                display.text(currentDisplay + newValue);
+            }
         } else {
-            display.text(currentDisplay + newValue);
+            if (currentDisplay === '0') {
+                
+                display.text(newValue);
+            } else {
+                display.text(currentDisplay + newValue);
+            }
         }
     });
+    
 
     $('.add, .subtract, .multiply, .divide').click(function() {
         let currentDisplay = display.text();
@@ -61,3 +71,5 @@ $(document).ready(function() {
         }
     });
 });
+
+

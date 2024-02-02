@@ -9,15 +9,13 @@ $(document).ready(function() {
         if (newValue === '.') {
             
             if (!currentDisplay.includes('.')) {
-                
                 display.text(currentDisplay + newValue);
             }
         } else {
             if (currentDisplay === '0') {
-                
                 display.text(newValue);
-            } else {
-                display.text(currentDisplay + newValue);
+            
+        } else {display.text(currentDisplay + newValue);
             }
         }
     });
